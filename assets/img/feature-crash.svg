@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Crash Detection g-force graph and emergency call">
+  <defs>
+    <linearGradient id="c6bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151821"/><stop offset="1" stop-color="#04050a"/>
+    </linearGradient>
+    <linearGradient id="c6area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5f6d" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff5f6d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="c6body" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#454c60"/><stop offset="0.5" stop-color="#242a38"/><stop offset="1" stop-color="#11141c"/>
+    </linearGradient>
+    <linearGradient id="c6call" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5ce08f"/><stop offset="1" stop-color="#25c26a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#c6bg)"/>
+
+  <!-- axes -->
+  <g transform="translate(56 56)">
+    <text x="0" y="-14" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8d97ad" letter-spacing="1.5">G-FORCE (g)</text>
+    <path d="M0 300 H512" stroke="#59627a" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0 300 V0" stroke="#59627a" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- threshold -->
+    <path d="M0 96 H512" stroke="#ffb020" stroke-width="1.6" stroke-dasharray="7 6" opacity="0.85"/>
+    <text x="4" y="88" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#ffb020">IMPACT THRESHOLD</text>
+
+    <!-- waveform -->
+    <path d="M0 268 L60 262 L110 274 L150 240 L190 268 L232 120 L250 34 L268 120 L286 262 L330 270 L380 264 L440 272 L512 266 L512 300 L0 300 Z" fill="url(#c6area)"/>
+    <path d="M0 268 L60 262 L110 274 L150 240 L190 268 L232 120 L250 34 L268 120 L286 262 L330 270 L380 264 L440 272 L512 266"
+          fill="none" stroke="#ff5f6d" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="250" cy="34" r="8" fill="#ff5f6d"/>
+    <circle cx="250" cy="34" r="16" fill="none" stroke="#ff5f6d" stroke-width="2" opacity="0.45"/>
+
+    <text x="250" y="334" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#ff5f6d" text-anchor="middle">CRASH DETECTED</text>
+  </g>
+
+  <!-- phone state card -->
+  <g transform="translate(336 66)">
+    <rect x="0" y="0" width="248" height="238" rx="20" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1"/>
+    <!-- mini phone -->
+    <g transform="translate(28 34)">
+      <rect x="0" y="0" width="76" height="140" rx="16" fill="url(#c6body)"/>
+      <rect x="6" y="6" width="64" height="128" rx="12" fill="#0b1220"/>
+      <path d="M22 6 h32 a0 0 0 0 1 0 12 h-32 a0 0 0 0 1 0 -12 Z" fill="#05070c"/>
+      <!-- emergency slide -->
+      <rect x="14" y="52" width="48" height="36" rx="18" fill="url(#c6call)" opacity="0.9"/>
+      <path d="M32 64 l12 8 -12 8 z" fill="#04240f"/>
+    </g>
+    <g font-family="Helvetica,Arial,sans-serif">
+      <text x="120" y="66" font-size="14" font-weight="700" fill="#ffffff">Automatic</text>
+      <text x="120" y="88" font-size="14" font-weight="700" fill="#ffffff">Emergency Call</text>
+      <path d="M120 100 H232" stroke="#ffffff" stroke-opacity="0.15"/>
+      <text x="120" y="124" font-size="11" fill="#8d97ad">Then contacts</text>
+      <text x="120" y="142" font-size="11" fill="#8d97ad">your emergency</text>
+      <text x="120" y="160" font-size="11" fill="#8d97ad">contacts, shares</text>
+      <text x="120" y="178" font-size="11" fill="#8d97ad">location &amp; time.</text>
+      <text x="28" y="214" font-size="10" fill="#6f7a90" letter-spacing="1.2">100+ COUNTRIES</text>
+    </g>
+  </g>
+
+  <!-- sensors -->
+  <g transform="translate(56 416)" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8d97ad" letter-spacing="1">
+    <rect x="0" y="-16" width="470" height="42" rx="21" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="235" y="10" text-anchor="middle" fill="#c3cad8">ACCELEROMETER  ·  GYROSCOPE  ·  BAROMETER  ·  CPU</text>
+  </g>
+</svg>

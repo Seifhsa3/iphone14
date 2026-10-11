@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Battery life and fast charging curve">
+  <defs>
+    <linearGradient id="c5bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151821"/><stop offset="1" stop-color="#04050a"/>
+    </linearGradient>
+    <linearGradient id="c5green" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#25c26a"/><stop offset="0.5" stop-color="#5ce08f"/>
+      <stop offset="1" stop-color="#a8f5c4"/>
+    </linearGradient>
+    <linearGradient id="c5curve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd23f"/><stop offset="1" stop-color="#25c26a"/>
+    </linearGradient>
+    <linearGradient id="c5bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#f0b429"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#c5bg)"/>
+
+  <!-- big battery -->
+  <g transform="translate(56 92)">
+    <rect x="0" y="0" width="240" height="126" rx="26" fill="none" stroke="#59627a" stroke-width="5"/>
+    <rect x="244" y="38" width="16" height="50" rx="8" fill="#59627a"/>
+    <rect x="10" y="10" width="206" height="106" rx="18" fill="url(#c5green)"/>
+    <!-- segments -->
+    <g stroke="#0d1a13" stroke-opacity="0.35" stroke-width="3">
+      <path d="M62 10 V116M114 10 V116M166 10 V116"/>
+    </g>
+    <!-- bolt -->
+    <path d="M126 22 L86 68 h26 l-10 40 42 -50 h-26 z" fill="url(#c5bolt)" opacity="0.95"/>
+  </g>
+
+  <!-- 20 hours -->
+  <g transform="translate(56 248)" font-family="Helvetica,Arial,sans-serif">
+    <text x="0" y="52" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="-1">20<tspan font-size="28" font-weight="600" fill="#5ce08f" dx="4">hrs</tspan></text>
+    <text x="2" y="76" font-size="13" fill="#8d97ad" letter-spacing="2">VIDEO PLAYBACK</text>
+  </g>
+
+  <!-- charging curve -->
+  <g transform="translate(340 150)">
+    <path d="M8 200 H252" stroke="#59627a" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 200 V16" stroke="#59627a" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 200 C 60 198, 84 150, 112 92 S 170 26, 248 20" fill="none" stroke="url(#c5curve)" stroke-width="4" stroke-linecap="round"/>
+    <!-- 50% marker -->
+    <path d="M112 92 L112 200" stroke="#ffd23f" stroke-width="1.4" stroke-dasharray="4 4" opacity="0.8"/>
+    <circle cx="112" cy="92" r="6" fill="#ffd23f"/>
+    <text x="112" y="228" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffd23f" text-anchor="middle">50% in 30 min</text>
+    <text x="8" y="12" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#8d97ad">CHARGE LEVEL</text>
+  </g>
+
+  <!-- footer notes -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8d97ad" letter-spacing="1">
+    <text x="56" y="418">MagSafe 15W  ·  Qi2</text>
+    <text x="56" y="440">20W adapter and up</text>
+  </g>
+</svg>

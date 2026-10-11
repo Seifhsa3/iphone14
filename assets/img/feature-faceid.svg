@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="TrueDepth Face ID dot projector and face scan">
+  <defs>
+    <linearGradient id="c3bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151821"/><stop offset="1" stop-color="#04050a"/>
+    </linearGradient>
+    <linearGradient id="c3body" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#454c60"/><stop offset="0.5" stop-color="#242a38"/><stop offset="1" stop-color="#11141c"/>
+    </linearGradient>
+    <linearGradient id="c3screen" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#1b2a44"/><stop offset="1" stop-color="#070a11"/>
+    </linearGradient>
+    <linearGradient id="c3ir" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5f8bff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#5f8bff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5f8bff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="c3dot" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="0.4" stop-color="#9fd4ff"/><stop offset="1" stop-color="#3a7bd5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c3scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ad7ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7ad7ff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#7ad7ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#c3bg)"/>
+
+  <!-- phone front -->
+  <rect x="218" y="44" width="204" height="392" rx="40" fill="url(#c3body)"/>
+  <rect x="218" y="44" width="204" height="392" rx="40" fill="none" stroke="#6d7893" stroke-opacity="0.5"/>
+  <rect x="228" y="54" width="184" height="372" rx="33" fill="url(#c3screen)"/>
+
+  <!-- notch -->
+  <path d="M268 54 h104 a0 0 0 0 1 0 34 h-104 a0 0 0 0 1 0 -34 Z" fill="#05070c"/>
+  <rect x="290" y="60" width="60" height="22" rx="11" fill="#0b0f18"/>
+  <!-- IR flood -->
+  <ellipse cx="304" cy="71" rx="12" ry="8" fill="url(#c3ir)"/>
+  <!-- dot projector -->
+  <circle cx="334" cy="71" r="9" fill="url(#c3dot)"/>
+  <!-- front camera -->
+  <circle cx="360" cy="71" r="7" fill="#101826" stroke="#5f8bff" stroke-opacity="0.6"/>
+
+  <!-- projector beams -->
+  <g opacity="0.75">
+    <path d="M334 84 L300 300 L372 300 Z" fill="url(#c3scan)" opacity="0.30"/>
+    <path d="M304 84 L276 300 L336 300 Z" fill="url(#c3scan)" opacity="0.18"/>
+  </g>
+  <!-- dot grid -->
+  <g fill="#9fd4ff">
+    <circle cx="322" cy="140" r="2"/><circle cx="340" cy="160" r="2"/><circle cx="312" cy="186" r="2"/>
+    <circle cx="352" cy="208" r="2"/><circle cx="326" cy="232" r="2"/><circle cx="346" cy="258" r="2"/>
+    <circle cx="318" cy="282" r="2"/>
+  </g>
+
+  <!-- face wireframe -->
+  <g fill="none" stroke="#7ad7ff" stroke-opacity="0.85" stroke-width="2">
+    <ellipse cx="320" cy="222" rx="46" ry="58"/>
+    <path d="M278 214 q42 -26 84 0"/>
+    <path d="M300 246 q20 14 40 0"/>
+  </g>
+  <g fill="#7ad7ff">
+    <circle cx="302" cy="210" r="2.6"/><circle cx="338" cy="210" r="2.6"/>
+  </g>
+
+  <!-- lock badge -->
+  <g transform="translate(320 400)">
+    <rect x="-72" y="-16" width="144" height="32" rx="16" fill="#ffffff" fill-opacity="0.07" stroke="#7ad7ff" stroke-opacity="0.4"/>
+    <text x="0" y="6" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#9fd4ff" text-anchor="middle" letter-spacing="2">FACE ID</text>
+  </g>
+
+  <!-- callouts -->
+  <g font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8d97ad">
+    <path d="M470 71 H392" stroke="#5f8bff" stroke-opacity="0.6" stroke-width="1.2"/>
+    <text x="478" y="66">IR Flood Illuminator</text>
+    <text x="478" y="82" fill="#5f8bff" font-size="11"> floods the face with invisible light</text>
+
+    <path d="M470 150 H398" stroke="#5f8bff" stroke-opacity="0.6" stroke-width="1.2"/>
+    <text x="478" y="145">Dot Projector</text>
+    <text x="478" y="161" fill="#5f8bff" font-size="11"> 30,000 invisible dots</text>
+
+    <path d="M170 250 H204" stroke="#5f8bff" stroke-opacity="0.6" stroke-width="1.2"/>
+    <text x="162" y="245" text-anchor="end">Depth Map</text>
+    <text x="162" y="261" text-anchor="end" fill="#5f8bff" font-size="11"> 3D face model</text>
+  </g>
+</svg>

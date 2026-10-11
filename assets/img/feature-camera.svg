@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Dual 12MP camera system with field of view comparison">
+  <defs>
+    <linearGradient id="c2bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151821"/><stop offset="1" stop-color="#04050a"/>
+    </linearGradient>
+    <linearGradient id="c2ring" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#4a5166"/><stop offset="0.5" stop-color="#232836"/><stop offset="1" stop-color="#0f1219"/>
+    </linearGradient>
+    <radialGradient id="c2glass" cx="0.36" cy="0.32" r="0.78">
+      <stop offset="0" stop-color="#7f93c4"/><stop offset="0.28" stop-color="#2d3f68"/>
+      <stop offset="0.65" stop-color="#141d33"/><stop offset="1" stop-color="#05070d"/>
+    </radialGradient>
+    <radialGradient id="c2flare" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd23f" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ffd23f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c2cone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ad7ff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#7ad7ff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="c2cone2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd23f" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ffd23f" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#c2bg)"/>
+  <circle cx="180" cy="230" r="190" fill="url(#c2flare)"/>
+
+  <!-- field of view cones -->
+  <g>
+    <path d="M470 236 L640 128 L640 344 Z" fill="url(#c2cone)"/>
+    <path d="M170 236 L640 204 L640 268 Z" fill="url(#c2cone2)"/>
+    <path d="M640 128 A 232 232 0 0 1 640 344" fill="none" stroke="#7ad7ff" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="5 6"/>
+    <path d="M640 204 A 472 472 0 0 1 640 268" fill="none" stroke="#ffd23f" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="5 6"/>
+    <text x="612" y="112" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#7ad7ff" text-anchor="end">120°</text>
+    <path d="M170 124 V136" stroke="#ffd23f" stroke-opacity="0.6" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <text x="170" y="112" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#ffd23f" text-anchor="middle">26mm</text>
+  </g>
+
+  <!-- Ultra wide lens -->
+  <g transform="translate(470 236)">
+    <circle r="82" fill="url(#c2ring)"/>
+    <circle r="82" fill="none" stroke="#6d7893" stroke-opacity="0.55"/>
+    <circle r="68" fill="#080b12"/>
+    <circle r="60" fill="url(#c2glass)"/>
+    <!-- aperture blades -->
+    <g fill="#0c1424" stroke="#5c7bb5" stroke-opacity="0.55">
+      <path d="M0 -34 L30 -10 L0 34 L-30 -10 Z" opacity="0.45"/>
+      <path d="M0 34 L-30 -10 L-30 20 Z" opacity="0.35"/>
+      <path d="M0 34 L30 -10 L30 20 Z" opacity="0.35"/>
+    </g>
+    <circle r="26" fill="#04060b"/>
+    <circle cx="-19" cy="-22" r="13" fill="#cfe0ff" opacity="0.5"/>
+    <circle cx="26" cy="24" r="7" fill="#ffd9a8" opacity="0.3"/>
+    <circle r="82" fill="url(#c2flare)" opacity="0.5"/>
+  </g>
+
+  <!-- Wide lens -->
+  <g transform="translate(170 236)">
+    <circle r="98" fill="url(#c2ring)"/>
+    <circle r="98" fill="none" stroke="#6d7893" stroke-opacity="0.55"/>
+    <circle r="82" fill="#080b12"/>
+    <circle r="73" fill="url(#c2glass)"/>
+    <g fill="#0c1424" stroke="#5c7bb5" stroke-opacity="0.55">
+      <path d="M0 -42 L37 -12 L0 42 L-37 -12 Z" opacity="0.45"/>
+      <path d="M0 42 L-37 -12 L-37 25 Z" opacity="0.35"/>
+      <path d="M0 42 L37 -12 L37 25 Z" opacity="0.35"/>
+    </g>
+    <circle r="31" fill="#04060b"/>
+    <circle cx="-23" cy="-27" r="16" fill="#cfe0ff" opacity="0.52"/>
+    <circle cx="32" cy="30" r="9" fill="#ffd9a8" opacity="0.3"/>
+    <!-- OIS badge -->
+    <g transform="translate(0 120)">
+      <rect x="-46" y="0" width="92" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#ffd23f" stroke-opacity="0.45"/>
+      <text x="0" y="17" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffd23f" text-anchor="middle" letter-spacing="1.6">OIS</text>
+    </g>
+  </g>
+
+  <!-- labels -->
+  <text x="170" y="428" font-family="Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.2">12MP WIDE</text>
+  <text x="170" y="450" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8d97ad" text-anchor="middle" letter-spacing="1">f/1.5  ·  26mm</text>
+
+  <text x="470" y="428" font-family="Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.2">12MP ULTRA WIDE</text>
+  <text x="470" y="450" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#8d97ad" text-anchor="middle" letter-spacing="1">f/2.4  ·  13mm  ·  120°</text>
+</svg>
